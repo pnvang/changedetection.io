@@ -5,6 +5,11 @@ manifest digest. This updates the container runtime; it does not update the
 Python source checkout or a pip installation. Keep existing local environment,
 port, network and volume settings when applying this image change.
 
+The image reference in [docker-compose.yml](../docker-compose.yml) is the
+authoritative runtime pin. `docker compose pull` fetches that pinned image;
+it does not advance to a newer release. Future upgrades require updating both
+the version tag and verified manifest digest before following the backup steps.
+
 ## Before upgrading from 0.55.7
 
 1. Pull the pinned image before interrupting the running service:

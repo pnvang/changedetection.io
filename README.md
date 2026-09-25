@@ -191,9 +191,8 @@ docker run -d --restart always -p "127.0.0.1:5000:5000" -v datastore-volume:/dat
 
 ### docker compose
 
-```bash
-docker compose pull && docker compose up -d
-```
+Follow the [Compose deployment upgrade and rollback guide](docs/deployment-upgrade-0.60.7.md)
+for this repository's pinned image and required datastore backup.
 
 See the wiki for more information https://github.com/dgtlmoon/changedetection.io/wiki
 
